@@ -1,9 +1,6 @@
 FROM alpine:3.6
 LABEL maintainer="Sean Cheung <theoxuanx@gmail.com>"
 
-# RUN mv /etc/apk/repositories /etc/apk/repositories.bak
-# COPY repositories /etc/apk/repositories
-
 RUN set -ex \
     && echo "Install Dependencies..." \
     && apk add --update --no-cache nginx nginx-mod-stream bash  \
